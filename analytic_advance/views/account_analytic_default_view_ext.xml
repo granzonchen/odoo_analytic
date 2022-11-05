@@ -14,6 +14,7 @@
                         <field name="first_model" invisible="True"/>
                         <field name="first_api" attrs="{'invisible': [('first_type', '!=', 'api')]}"/>
                         <field name="first_field_name" attrs="{'invisible': ['|',('first_type', '=', False),('first_type', '=', 'model')]}"/>
+                        <field name="field_domain" widget="domain"/>
                         <field name="operator"/>
                     </group>
                     <group col="2">
